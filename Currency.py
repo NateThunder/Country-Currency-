@@ -36,9 +36,9 @@ match country:
         print(f"{country} uses Peso (CLP) as a currency")
 
     # Europe
-    case "United Kingdom":
+    case "United Kingdom"| "England" | "Scotland" | "Wales" | "Northern Ireland:
         print(f"{country} uses Pound Sterling (GBP) as a currency")
-    case "Germany" | "France" | "Spain" | "Italy" | "Netherlands":
+    case "Germany" | "France" | "Spain" | "Italy" | "Netherlands"|"Republic Of Irelans":
         print(f"{country} uses Euro (EUR) as a currency")
     case "Switzerland":
         print(f"{country} uses Swiss Franc (CHF) as a currency")
